@@ -13,3 +13,6 @@
 [submodule "core/common/korean-drama"]
 	path = core/common/korean-drama
 	url = git@github.com:kuzminklk/korean-drama.git
+[submodule "core/common/partfolio"]
+	path = core/common/partfolio
+	url = git@github.com:kuzminklk/partfolio.git
