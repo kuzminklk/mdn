@@ -1,6 +1,6 @@
 
-### Purpose 
-Detached repository for MDN study materials
+### Description 
+Detached repository for [MDN](https://developer.mozilla.org/) study materials
 
-### Associations
-More information, study path, summary in [detached Notion Page](https://www.notion.so/kuzminklk/MDN-31254d4de03580249e75fe008eae6ae9?source=copy_link)
+### Purpose
+Part of computer-science study curriculum availabe in [Notion](https://app.notion.com/p/kuzminklk/31154d4de03580d7b5ceca5b187846be) (private for now)
