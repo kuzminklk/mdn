@@ -1,0 +1,3 @@
+[submodule "core/css/fonts/moby-dick-3"]
+	path = core/css/fonts/moby-dick-3
+	url = https://github.com/kuzminklk/moby-dick
