@@ -7,3 +7,6 @@
 [submodule "core/css/background/fall"]
 	path = core/css/background/fall
 	url = https://github.com/kuzminklk/fall
+[submodule "core/css/background/gradients-2"]
+	path = core/css/background/gradients-2
+	url = https://github.com/kuzminklk/gradients
