@@ -4,3 +4,6 @@
 [submodule "core/html/svg/lines-2"]
 	path = core/html/svg/lines-2
 	url = https://github.com/kuzminklk/lines
+[submodule "core/css/background/fall"]
+	path = core/css/background/fall
+	url = https://github.com/kuzminklk/fall
