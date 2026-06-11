@@ -10,3 +10,6 @@
 [submodule "core/css/background/gradients-2"]
 	path = core/css/background/gradients-2
 	url = https://github.com/kuzminklk/gradients
+[submodule "core/common/korean-drama"]
+	path = core/common/korean-drama
+	url = git@github.com:kuzminklk/korean-drama.git
