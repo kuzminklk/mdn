@@ -1,4 +1,3 @@
-
 /* let items = ['bread', 'coffee', 'milk'];
 
 for (let item of items) {
@@ -7,10 +6,10 @@ for (let item of items) {
     document.body.appendChild(para); 
 } */
 
-let items = ['bread', 'coffee', 'milk'];
+let items = ["bread", "coffee", "milk"]
 
-let myList = items.join(', ');
+let myList = items.join(", ")
 
-const para = document.createElement("p");
-para.textContent = myList;
-document.body.appendChild(para); 
+const para = document.createElement("p")
+para.textContent = myList
+document.body.appendChild(para)

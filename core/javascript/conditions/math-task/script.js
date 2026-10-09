@@ -26,19 +26,18 @@ document.body.appendChild(para);
 
 // Final result should be 4633.33
 
-let result = 7 + 13 / 9 + 7;
-let result2 = (100 / 2) * 6;
+let result = 7 + 13 / 9 + 7
+let result2 = (100 / 2) * 6
 let finalNumber
 
-result = result * result2;
-let finalResult = result.toFixed(2);
+result = result * result2
+let finalResult = result.toFixed(2)
 if (typeof finalResult === "string") {
-    finalNumber = Number(finalResult);
-}
-else {
-    finalNumber = finalResult;
+	finalNumber = Number(finalResult)
+} else {
+	finalNumber = finalResult
 }
 
-const para = document.createElement("p");
-para.textContent = finalNumber;
-document.body.appendChild(para); 
+const para = document.createElement("p")
+para.textContent = finalNumber
+document.body.appendChild(para)

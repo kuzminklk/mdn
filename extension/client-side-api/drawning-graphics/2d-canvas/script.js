@@ -1,11 +1,8 @@
+const canvas = document.querySelector(".myCanvas")
+const width = (canvas.width = window.innerWidth)
+const height = (canvas.height = window.innerHeight)
 
-
-const canvas = document.querySelector(".myCanvas");
-const width = (canvas.width = window.innerWidth);
-const height = (canvas.height = window.innerHeight);
-
-const ctx = canvas.getContext("2d");
-
+const ctx = canvas.getContext("2d")
 
 /* 
 ctx.fillStyle = "black";
@@ -27,7 +24,6 @@ ctx.strokeStyle = "white";
 ctx.lineWidth = 5;
 ctx.strokeRect(25, 25, 175, 200);
 */
-
 
 /* 
 function degToRad(degrees) {
@@ -56,7 +52,6 @@ ctx.lineTo(200, 106);
 ctx.fill(); 
 */
 
-
 /* 
 ctx.strokeStyle = "white";
 ctx.lineWidth = 1;
@@ -70,14 +65,12 @@ ctx.fillText("Canvas text", 50, 150);
 canvas.setAttribute("aria-label", "Canvas text");
 */
 
-
 /* 
 const image = new Image();
 image.src = "https://mdn.github.io/shared-assets/images/examples/fx-nightly-512.png";
 
 image.addEventListener("load", () => ctx.drawImage(image, 0, 0, 512, 512, 50, 40, 185, 185));
 */
-
 
 /*
  ctx.translate(width / 2, height / 2);
@@ -110,26 +103,23 @@ for (let i = 0; i < length; i++) {
 } 
 */
 
+ctx.fillStyle = "#e5e6e9"
+ctx.fillRect(0, 0, width, height)
 
-ctx.fillStyle = "#e5e6e9";
-ctx.fillRect(0, 0, width, height);
+ctx.translate(width / 2, height / 2)
 
-ctx.translate(width / 2, height / 2);
+const image = new Image()
+image.src = "https://developer.mozilla.org/shared-assets/images/examples/web-animations/cat_sprite.png"
+image.onload = draw
 
-const image = new Image();
-image.src =
-	"https://developer.mozilla.org/shared-assets/images/examples/web-animations/cat_sprite.png";
-image.onload = draw;
-
-let spriteIndex = 0;
-let posX = 0;
-const spriteWidth = 300;
-const spriteHeight = 150;
-const totalSprites = 12;
+let spriteIndex = 0
+let posX = 0
+const spriteWidth = 300
+const spriteHeight = 150
+const totalSprites = 12
 
 function draw() {
-
-	ctx.fillRect(-(width / 2), -(height / 2), width, height);
+	ctx.fillRect(-(width / 2), -(height / 2), width, height)
 
 	ctx.drawImage(
 		image,
@@ -141,22 +131,22 @@ function draw() {
 		-spriteHeight / 2,
 		spriteWidth,
 		spriteHeight,
-	);
+	)
 
 	if (posX % 11 === 0) {
 		if (spriteIndex === totalSprites - 1) {
-			spriteIndex = 0;
+			spriteIndex = 0
 		} else {
-			spriteIndex++;
+			spriteIndex++
 		}
 	}
 
 	if (posX < -width / 2 - spriteWidth) {
-		const newStartPos = width / 2;
-		posX = Math.ceil(newStartPos);
+		const newStartPos = width / 2
+		posX = Math.ceil(newStartPos)
 	} else {
-		posX -= 2;
+		posX -= 2
 	}
 
-	window.requestAnimationFrame(draw);
+	window.requestAnimationFrame(draw)
 }

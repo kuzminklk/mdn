@@ -84,7 +84,7 @@ body {
 
 /* End resets */
 /* Global styles */
-.form-group>input[type="text"] {
+.form-group > input[type="text"] {
 	display: inline-block;
 	margin-top: 0.4rem;
 }
@@ -126,11 +126,11 @@ body {
 	justify-content: space-between;
 }
 
-.btn-group>* {
+.btn-group > * {
 	flex: 1 1 49%;
 }
 
-.btn-group>*+* {
+.btn-group > * + * {
 	margin-left: 0.8rem;
 }
 
@@ -149,25 +149,25 @@ body {
 	width: 1px;
 }
 
-[class*="stack"]>* {
+[class*="stack"] > * {
 	margin-bottom: 0;
 	margin-top: 0;
 }
 
-.stack-small>*+* {
+.stack-small > * + * {
 	margin-top: 1.25rem;
 }
 
-.stack-large>*+* {
+.stack-large > * + * {
 	margin-top: 2.5rem;
 }
 
 @media screen and (width >=550px) {
-	.stack-small>*+* {
+	.stack-small > * + * {
 		margin-top: 1.4rem;
 	}
 
-	.stack-large>*+* {
+	.stack-large > * + * {
 		margin-top: 2.8rem;
 	}
 }
@@ -194,17 +194,17 @@ body {
 	}
 }
 
-.todoapp>* {
+.todoapp > * {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 50rem;
 }
 
-.todoapp>form {
+.todoapp > form {
 	max-width: 100%;
 }
 
-.todoapp>h1 {
+.todoapp > h1 {
 	display: block;
 	margin: 0;
 	margin-bottom: 1rem;
@@ -254,7 +254,7 @@ body {
 	flex-wrap: wrap;
 }
 
-.todo>* {
+.todo > * {
 	flex: 0 0 100%;
 }
 
@@ -285,8 +285,8 @@ body {
 	position: relative;
 }
 
-.c-cb>label::before,
-.c-cb>input[type="checkbox"] {
+.c-cb > label::before,
+.c-cb > input[type="checkbox"] {
 	box-sizing: border-box;
 	height: 44px;
 	left: -2px;
@@ -295,7 +295,7 @@ body {
 	border-radius: 4px;
 }
 
-.c-cb>input[type="checkbox"] {
+.c-cb > input[type="checkbox"] {
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
 	margin: 0;
@@ -305,7 +305,7 @@ body {
 	border-radius: 4px;
 }
 
-.c-cb>label {
+.c-cb > label {
 	cursor: pointer;
 	display: inline-block;
 	font-family: inherit;
@@ -316,19 +316,19 @@ body {
 	touch-action: manipulation;
 }
 
-.c-cb>label::before {
+.c-cb > label::before {
 	background: transparent;
 	border: 2px solid currentColor;
 	content: "";
 	position: absolute;
 }
 
-.c-cb>input[type="checkbox"]:focus-visible+label::before {
+.c-cb > input[type="checkbox"]:focus-visible + label::before {
 	border-width: 4px;
 	outline: 3px dashed #228bec;
 }
 
-.c-cb>label::after {
+.c-cb > label::after {
 	background: transparent;
 	border: solid;
 	border-width: 0 0 5px 5px;
@@ -344,7 +344,7 @@ body {
 	width: 18px;
 }
 
-.c-cb>input[type="checkbox"]:checked+label::after {
+.c-cb > input[type="checkbox"]:checked + label::after {
 	opacity: 1;
 }
 
